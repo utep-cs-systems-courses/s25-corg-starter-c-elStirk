@@ -26,3 +26,16 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+/*
+Prints an arrow of the specified size is the head (triangle)
+ */
+void print_arrow(int leftCol, int size){
+
+  print_triangle(leftCol, size);
+  
+  int bodyWidth = size/2;
+  int bodyLeft = leftCol + size - 1;
+
+  print_square(bodyLeft, bodyWidth);
+}
+
